@@ -1,0 +1,323 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+p{
+    font-size: large;
+}
+h2{
+    font-size: x-large;
+}
+h1 {
+    font-size: xx-large; /* Adjusted font size */
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 78px;
+    background-color: #f0f8ff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    font-size: large;
+    text-decoration: none;
+    color: rgb(58, 214, 231);
+}
+
+nav ul li a:hover {
+    color: rgb(147, 147, 216);
+    font-size: 1.03rem;
+}
+
+main hr {
+    border: 0;
+    height: 1.2px;
+    margin: 40px 84px;
+    background: #837de8;
+}
+.left {
+    font-size: 1.7rem;
+}
+
+
+.hero {
+    background-image: url('https://picsum.photos/2000/1000');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ccc;
+}
+
+/* about Container styling */
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Creates space between the two sections */
+    padding: 20px;
+    margin: 2%;
+}
+.about-container{
+    display: flex;
+    width: 100%;
+}
+#about-image{
+    flex: 1;
+}
+#about-image img {
+    width: 60%;
+    height: auto;
+    padding-left: 10%;
+}
+
+#about-material {
+   flex: 1;/* Material takes half */
+   justify-content: center;
+   padding: 6%;
+   box-sizing: content-box;
+}
+
+#about-material h3, #about-material h1 {
+    margin: 0;
+}
+
+#about-material p {
+    margin: 10px 0;
+}
+#about-image img:hover {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+h2 {
+    font-size: 28px; /* Larger font size for section title */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px; /* Slightly larger font for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+    color: #007bff; /* Color for subheadings */
+    text-align: left;
+}
+
+p {
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#projects {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#projects p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+#projects .project-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 50px;
+}
+
+#projects .project-base {
+    position: relative;
+}
+
+#projects .project-box {
+    background: #f9f9ff;
+    text-align: left; /* Align text left for better readability */
+    padding: 20px; /* Adjusted padding */
+    transition: 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    border: 1px solid #e0e0e0; /* Subtle border */
+    
+}
+
+#projects .project-box:hover {
+    transform: scale(1.05);
+    background-color: #b6effa;
+}
+
+#projects .project-base:hover > :not(:hover){
+    opacity: 0.4;
+  }
+#projects .project-box h3 {
+    font-size: 1.5rem; /* Increased heading size */
+    font-weight: 700;
+    color: #424067;
+    margin-bottom: 10px; /* Space below heading */
+}
+
+#projects .project-box p {
+    font-size: 1rem;
+    color: #545454;
+}
+
+.highlight {
+    font-weight: bold; /* Bold text for highlighted items */
+    color: #333; /* Darker color for emphasis */
+}
+
+/* Accessibility adjustments */
+#projects .project-base:focus {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+
+
+.contact {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none;
+}
+
+.contact button {
+    padding: 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
