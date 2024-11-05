@@ -149,7 +149,6 @@ nav ul li a:hover {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.2s ease;
-    text-decoration: none;
 }
 
 .hero .btn:hover {
@@ -375,18 +374,17 @@ p {
   }
   
   #education p, #certifications p {
-    text-align: center;
     color: #555;
     margin-bottom: 20px;
   }
   
   .education-feature-base, .certification-feature-base {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     align-items: center;
   }
   
+ 
   .education-feature-box, .certification-feature-box {
     width: 60%;
     background-color: #ffffff;
@@ -595,5 +593,22 @@ footer p {
     .recommendations-box, .contact-box {
         flex: 1 1 100%; /* Make boxes take full width */
         margin: 10px 0; /* Adjust margins for vertical stacking */
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    #about-image img {
+        padding: 0;
+        width: 100%;
+        height: 500px;
+    }
+    #about-material {
+        padding: 0;
+    }
+    .hero h2 {
+        font-size: 24px;
+    }
+    .hero p {
+        font-size: 16px;
     }
 }
