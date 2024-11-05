@@ -302,54 +302,99 @@ p {
     font-weight: bold; 
 }
 
-.experience-base {
-    display: flex;
-    flex-direction: column; 
-    gap: 30px; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-}
-
-.experience-box {
-    background-color: #ffffff; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-    padding: 30px; 
-    transition: transform 0.3s, box-shadow 0.3s; 
-    position: relative;
-    overflow: hidden; 
-    border-left: 5px solid #007bff; 
-}
-
-.experience-box:hover {
+.swiper-slide:hover {
     transform: translateY(-5px); 
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
 }
 
-.experience-box h3 {
+.swiper-slide h3 {
     color: #007bff; 
     margin-bottom: 15px; 
     font-size: 1.8rem; 
 }
 
-.experience-box p {
+.swiper-slide p {
     color: #555; 
     line-height: 1.6; 
     text-align: left;
     padding-left: 10%;
 }
 
-.experience-box ul {
+.swiper-slide ul {
     text-align: left;
     list-style-type: disc; 
     margin-left: 20px; 
     color: #444; 
 }
 
-.experience-box .icon {
+.swiper-slide .icon {
     font-size: 40px; 
     color: #007bff; 
     margin-bottom: 15px; 
+}
+
+
+.swiper-container {
+    width: 100%; /* Full width */
+    height: auto; /* Automatic height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.swiper-wrapper {
+    display: flex; /* Flexbox for proper alignment */
+}
+
+.swiper-slide {
+    display: flex; /* Center content */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Padding around content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    width: 100%; /* Ensure each slide takes full width */
+    box-sizing: border-box; /* Include padding in width */
+    border-left: 5px solid #007bff; 
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #007bff; /* Change to your preferred color */
+    font-size: 24px; /* Size of the arrows */
+    width: 40px; /* Width of the buttons */
+    height: 40px; /* Height of the buttons */
+    background-color: rgba(255, 255, 255, 0.7); /* Background color */
+    border-radius: 50%; /* Make them circular */
+    display: flex; /* Center the icon */
+    align-items: center; 
+    justify-content: center; 
+    z-index: 10; /* Ensure they are above other content */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Change background on hover */
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+#backward-button, #forward-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    margin: 0 10px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#backward-button:hover, #forward-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 /* Responsive Design */

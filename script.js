@@ -38,7 +38,7 @@ const swiper = new Swiper('.swiper-container', {
             spaceBetween: 10,
         },
         768: {
-            slidesPerView: 1, // Show one slide at a time on medium screens
+            slidesPerView: 2, // Show 2 slide at a time on medium screens
             spaceBetween: 20,
         },
         1024: {
