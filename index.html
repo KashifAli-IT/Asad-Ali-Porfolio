@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asad Ali's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" >
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left"><a href="#">Asad Ali</a></div>
+     <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <div class="left"><a href="./index.html">Asad Ali</a></div>
             <div class="right">
                 <div class="hamburger" id="hamburger">&#9776;</div>
                 <ul id="nav-links">
@@ -27,7 +25,7 @@
             </div>
         </nav>
     </header>
-
+   
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Empowering People, Transforming Organizations</h2>
@@ -41,7 +39,7 @@
 <section id="about">
     <div class="about-container">
         <div id="about-image">
-            <img src="./aboutme.png" alt="About Me Image" />
+            <img src="./aboutme.png" alt="A professional photo of Asad Ali" />
         </div>
         <div id="about-material">
             <h2>About Me</h2>
@@ -360,42 +358,12 @@
     </div>
 </section>
 
-<footer>
+<footer role="contentinfo">
         <div class="container">
             <p>Thank you & have a good day!</p>
         </div>
     </footer>
 
-    <script>
-        document.querySelectorAll('.skill-heading').forEach(heading => {
-            heading.addEventListener('click', () => {
-                const skillList = heading.nextElementSibling; // Get the next sibling (the list)
-                if (skillList.style.display === 'block') {
-                    skillList.style.display = 'none'; // Hide the list
-                } else {
-                    skillList.style.display = ' block'; // Show the list
-                }
-            });
-        });
-    </script>
-
-<script>
-    document.getElementById('hamburger').addEventListener('click', function() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('active'); // Toggle the active class
-        this.classList.toggle('active'); // Toggle the active class for hamburger
-    });
-
-    // Add click event to each link to close the menu
-    const navItems = document.querySelectorAll('#nav-links li a');
-    navItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.remove('active'); // Remove active class to close the menu
-            document.getElementById('hamburger').classList.remove('active'); // Remove active class from hamburger
-        });
-    });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
