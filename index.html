@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   
     <header>
         <nav>
-            <div class="left" ><a href="#">Asad Ali</a></div>
+            <div class="left"><a href="#">Asad Ali</a></div>
             <div class="right">
-                <ul>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <ul id="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -378,6 +378,24 @@
             });
         });
     </script>
+
+<script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active'); // Toggle the active class
+        this.classList.toggle('active'); // Toggle the active class for hamburger
+    });
+
+    // Add click event to each link to close the menu
+    const navItems = document.querySelectorAll('#nav-links li a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.remove('active'); // Remove active class to close the menu
+            document.getElementById('hamburger').classList.remove('active'); // Remove active class from hamburger
+        });
+    });
+</script>
 
 </body>
 </html>

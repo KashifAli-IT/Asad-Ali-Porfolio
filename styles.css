@@ -11,20 +11,21 @@ h2{
     font-size: x-large;
 }
 h1 {
-    font-size: xx-large; /* Adjusted font size */
-    margin: 0; /* Remove default margin */
+    font-size: xx-large; 
+    margin: 0;
 }
 
 nav {
-    position: fixed; /* Fix the header at the top */
-    top: 0; /* Position it at the top */
-    left: 0; /* Align it to the left */
-    right: 0; /* Align it to the right */
-    z-index: 1000; /* Ensure it stays above other content */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 78px;
+    padding: 10px 20px;
     background-color: #f0f8ff;
 }
 
@@ -48,11 +49,68 @@ nav ul li a:hover {
     font-size: 1.15rem;
 }
 
-main hr {
-    border: 0;
-    height: 1.2px;
-    margin: 40px 84px;
-    background: #837de8;
+#nav-links {
+    display: flex; 
+    list-style: none;
+}
+
+#nav-links li {
+    margin: 0 15px;
+}
+#nav-links a {
+    text-decoration: none;
+    color: rgb(13, 11, 11); 
+    font-weight: bold; 
+    transition: color 0.3s; 
+    padding-left: 5px;
+}
+
+#nav-links a:hover {
+    color: #ffcc00; 
+}
+
+
+/* Add this to your existing CSS file */
+.hamburger {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+/* Transition effect for the hamburger icon */
+.hamburger.active {
+    transform: rotate(90deg); 
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+    
+    #nav-links {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; 
+        right: 0;
+        background-color: white; 
+        width: 100%; 
+        border: 1px solid #ccc; 
+    }
+
+    #nav-links.active {
+        display: flex; 
+    }
+
+    #nav-links li {
+        margin: 10px 0; 
+        text-align: center;
+    }
+    #nav-links a {
+        padding: 10px; 
+        display: block; 
+    }
 }
 .left {
     font-size: 1.7rem;
@@ -108,8 +166,8 @@ main hr {
 #about {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Creates space between the two sections */
+    align-items: center; 
+    justify-content: space-between; 
     padding: 20px;
     margin: 2%;
 }
@@ -128,7 +186,7 @@ main hr {
 }
 
 #about-material {
-   flex: 1;/* Material takes half */
+   flex: 1;
    justify-content: center;
    padding: 6%;
    box-sizing: content-box;
@@ -143,86 +201,86 @@ main hr {
 }
 
 h2 {
-    font-size: 28px; /* Larger font size for section title */
-    margin-bottom: 20px; /* Space below title */
+    font-size: 28px; 
+    margin-bottom: 20px; 
     text-align: center;
 }
 
 h3 {
-    font-size: 24px; /* Slightly larger font for subheadings */
-    margin-top: 20px; /* Space above subheadings */
-    color: #007bff; /* Color for subheadings */
+    font-size: 24px; 
+    margin-top: 20px; 
+    color: #007bff; 
     text-align: left;
 }
 
 p {
-    line-height: 1.6; /* Improved line height for readability */
-    margin-bottom: 20px; /* Space below paragraphs */
+    line-height: 1.6; 
+    margin-bottom: 20px; 
 }
 
 /* Experience Section */
 #experience {
-    background-color: #f0f4f8; /* Light background for contrast */
-    padding: 73px 20px; /* Padding for spaciousness */
-    text-align: center; /* Center text for a balanced look */
-    border-top: 5px solid #007bff; /* Blue border at the top for distinction */
+    background-color: #f0f4f8; 
+    padding: 73px 20px; 
+    text-align: center; 
+    border-top: 5px solid #007bff; 
 }
 
 #experience h1 {
-    font-size: 2.5rem; /* Larger font size for the section title */
-    color: #333; /* Darker color for contrast */
-    margin-bottom: 40px; /* Space below title */
-    font-weight: bold; /* Bold title for emphasis */
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 40px; 
+    font-weight: bold; 
 }
 
 .experience-base {
     display: flex;
-    flex-direction: column; /* Stack experience boxes vertically */
-    gap: 30px; /* Space between experience boxes */
-    max-width: 1200px; /* Limit max width for better readability */
-    margin: 0 auto; /* Center the experience section */
+    flex-direction: column; 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .experience-box {
-    background-color: #ffffff; /* White background for boxes */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 30px; /* Padding inside the box */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
-    position: relative; /* Position for pseudo-elements */
-    overflow: hidden; /* Prevent overflow of pseudo-elements */
-    border-left: 5px solid #007bff; /* Left border for visual distinction */
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 30px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    position: relative;
+    overflow: hidden; 
+    border-left: 5px solid #007bff; 
 }
 
 .experience-box:hover {
-    transform: translateY(-5px); /* Lift the box on hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
 }
 
 .experience-box h3 {
-    color: #007bff; /* Bootstrap primary color for headings */
-    margin-bottom: 15px; /* Space below the heading */
-    font-size: 1.8rem; /* Increased heading size */
+    color: #007bff; 
+    margin-bottom: 15px; 
+    font-size: 1.8rem; 
 }
 
 .experience-box p {
-    color: #555; /* Medium color for text */
-    line-height: 1.6; /* Improve readability */
+    color: #555; 
+    line-height: 1.6; 
     text-align: left;
     padding-left: 10%;
 }
 
 .experience-box ul {
     text-align: left;
-    list-style-type: disc; /* Bullet points for lists */
-    margin-left: 20px; /* Indent list */
-    color: #444; /* Darker color for list items */
+    list-style-type: disc; 
+    margin-left: 20px; 
+    color: #444; 
 }
 
 .experience-box .icon {
-    font-size: 40px; /* Icon size */
-    color: #007bff; /* Icon color */
-    margin-bottom: 15px; /* Space below the icon */
+    font-size: 40px; 
+    color: #007bff; 
+    margin-bottom: 15px; 
 }
 
 /* Responsive Design */
@@ -270,13 +328,12 @@ p {
 
 #projects .project-box {
     background: #f9f9ff;
-    text-align: left; /* Align text left for better readability */
-    padding: 20px; /* Adjusted padding */
+    text-align: left; 
+    padding: 20px; 
     transition: 0.3s ease;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
-    border: 1px solid #e0e0e0; /* Subtle border */
-    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #e0e0e0;
 }
 
 #projects .project-box:hover {
@@ -288,10 +345,10 @@ p {
     opacity: 0.4;
   }
 #projects .project-box h3 {
-    font-size: 1.5rem; /* Increased heading size */
+    font-size: 1.5rem; 
     font-weight: 700;
     color: #007bff;
-    margin-bottom: 10px; /* Space below heading */
+    margin-bottom: 10px; 
 }
 
 #projects .project-box p {
@@ -300,8 +357,8 @@ p {
 }
 
 .highlight {
-    font-weight: bold; /* Bold text for highlighted items */
-    color: #333; /* Darker color for emphasis */
+    font-weight: bold; 
+    color: #333;
 }
 
 /* Accessibility adjustments */
@@ -365,84 +422,83 @@ p {
 
 /* General styles for the skills section */
 #skills {
-    background-color: #fff; /* Light background for contrast */
-    padding: 78px 20px; /* Padding for spacing */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff;
+    padding: 78px 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     height: calc(100% + 78px);
     width:auto;
 }
 
 /* Heading styles */
 #skills h1 {
-    text-align: center; /* Center the main heading */
-    font-size: 2.5em; /* Larger font size for emphasis */
-    color: #333; /* Dark color for text */
-    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; 
+    font-size: 2.5em; 
+    color: #333; 
+    margin-bottom: 20px; 
 }
 
 /* Styles for each skills category */
 .skills-list h3 {
-    font-size: 1.5em; /* Larger font for category titles */
-    color: #007BFF; /* Blue color for category titles */
-    margin-top: 20px; /* Space above each category */
-    margin-bottom: 10px; /* Space below each category */
+    font-size: 1.5em; 
+    color: #007BFF; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
 }
 
 /* List styles */
 .skills-list ul {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove padding */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .skills-list li {
-    background-color: #e9ecef; /* Light grey background for list items */
-    margin: 5px 0; /* Space between list items */
-    padding: 10px; /* Padding within list items */
-    border-radius: 4px; /* Rounded corners for list items */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #e9ecef; 
+    margin: 5px 0; 
+    padding: 10px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
 }
 
 /* Hover effect for list items */
 .skills-list li:hover {
-    background-color: #88c0d4; /* Change background color on hover */
-    color: white; /* Change text color on hover */
+    background-color: #88c0d4; 
+    color: white; 
 }
  
-/* styles.css */
 
 /* Additional styles for the skills section */
 .skill-category {
-    margin-bottom: 15px; /* Space between categories */
+    margin-bottom: 15px; 
 }
 
 .skill-heading {
-    cursor: pointer; /* Pointer cursor for clickable headings */
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Space between title and arrow */
-    align-items: center; /* Center alignment */
-    background-color: #def6fb; /* Background color for headings */
-    color: white; /* Text color */
-    padding: 10px; /* Padding for better touch target */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth background change */
+    cursor: pointer; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #def6fb;
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
 }
 
 .skill-heading:hover {
-    background-color: #b6e6f9; /* Darker blue on hover */
+    background-color: #b6e6f9; 
 }
 
 .skill-list {
-    display: none; /* Hide the list by default */
-    padding-left: 20px; /* Indent the list */
-    margin-top: 5px; /* Space above the list */
+    display: none; 
+    padding-left: 20px; 
+    margin-top: 5px; 
 }
 
 .skill-list li {
-    background-color: #e9ecef; /* Light grey background for list items */
-    margin: 5px 0; /* Space between list items */
-    padding: 8px; /* Padding within list items */
-    border-radius: 4px; /* Rounded corners for list items */
+    background-color: #e9ecef; 
+    margin: 5px 0;
+    padding: 8px; 
+    border-radius: 4px; 
 }
 
 footer {
@@ -459,86 +515,85 @@ footer p {
 }
 
 
-/* styles.css */
 
 /* Recommendations & Contact Section Styling */
 .recommendations-contact {
-    background-color: #fff; /* Light background color */
-    padding: 40px; /* Padding for spacing */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    margin: 20px 0; /* Margin for spacing */
+    background-color: #fff;
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
 }
 
 .content-wrapper {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Space between columns */
-    flex-wrap: wrap; /* Allow wrapping */
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
 .recommendations-box, .contact-box {
-    flex: 1; /* Take up available space */
-    margin: 10px; /* Margin for spacing between boxes */
-    background-color: #fff; /* White background for boxes */
-    padding: 78px; /* Padding inside boxes */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1; 
+    margin: 10px; 
+    background-color: #fff; 
+    padding: 78px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .recommendations-box h2, .contact-box h2 {
-    font-size: 28px; /* Font size for headings */
-    margin-bottom: 20px; /* Space below heading */
-    color: #333; /* Dark color for text */
+    font-size: 28px; 
+    margin-bottom: 20px; 
+    color: #333; 
 }
 
 .recommendation {
-    margin-bottom: 20px; /* Space between recommendations */
+    margin-bottom: 20px; 
 }
 
 .recommendation h3 {
-    margin: 0; /* Remove default margin */
-    color: #007bff; /* Blue color for names */
+    margin: 0; 
+    color: #007bff; 
 }
 
 .contact-info {
-    margin-top: 20px; /* Space above contact info */
-    font-size: 16px; /* Font size for contact info */
-    color: #333; /* Dark color for text */
+    margin-top: 20px; 
+    font-size: 16px; 
+    color: #333; 
 }
 
 .contact-info a {
-    color: #007bff; /* Link color */
-    text-decoration: none; /* No underline */
+    color: #007bff; 
+    text-decoration: none; 
 }
 
 .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 /* Form Styling */
 #contact-form {
-    display: flex; /* Flexbox for layout */
-    flex-direction: column; /* Column layout */
+    display: flex; 
+    flex-direction: column; 
 }
 
 #contact-form input, #contact-form textarea {
-    padding: 15px; /* Padding for input fields */
-    margin-bottom: 20px; /* Space between input fields */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
 #contact-form button[type="submit"] {
-    background-color: #007bff; /* Blue background for submit button */
-    color: #fff; /* White text for submit button */
-    padding: 10px 20px; /* Padding for submit button */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 #contact-form button[type="submit"]:hover {
-    background-color: #0069d9; /* Darker blue on hover */
+    background-color: #0069d9; 
 }
 
 /* Media Query for Responsive Design */
