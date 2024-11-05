@@ -24,3 +24,35 @@ item.addEventListener('click', function() {
     document.getElementById('hamburger').classList.remove('active'); // Remove active class from hamburger
 });
 });
+
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // Show one slide at a time
+    spaceBetween: 10, // Space between slides
+   navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1, // Show one slide at a time on small screens
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 1, // Show one slide at a time on medium screens
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 2, // Show two slides at a time on larger screens
+            spaceBetween: 30,
+        },
+    },
+});
+
+// Add event listeners to the new buttons
+document.getElementById('forward-button').addEventListener('click', function() {
+    swiper.slideNext(); // Move to the next slide
+});
+
+document.getElementById('backward-button').addEventListener('click', function() {
+    swiper.slidePrev(); // Move to the previous slide
+});
