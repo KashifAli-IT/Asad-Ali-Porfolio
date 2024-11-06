@@ -62,15 +62,13 @@ nav ul li a:hover {
     color: #ffcc00; 
 }
 
-
-/* Add this to your existing CSS file */
 .hamburger {
     display: none; 
     font-size: 30px;
     cursor: pointer;
     
 }
-/* Transition effect for the hamburger icon */
+ 
 .hamburger.active {
     transform: rotate(90deg); 
 }
@@ -160,10 +158,10 @@ nav ul li a:hover {
 /* About Section Styling */
 #about {
     display: flex;
-    flex-direction: column; /* Stack elements vertically on mobile */
+    flex-direction: column;  
     align-items: center; 
     padding: 20px; 
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f9f9f9;  
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     margin: 20px; 
@@ -171,7 +169,7 @@ nav ul li a:hover {
 
 .about-container {
     display: flex; 
-    flex-direction: column; /* Stack on mobile */
+    flex-direction: column;  
     align-items: center; 
     width: 100%;
 }
@@ -187,9 +185,9 @@ nav ul li a:hover {
 
 
 .about-image img {
-    width: 100%; /* Make the image fill the container */
-    max-width: 400px; /* Adjust max width as necessary */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;  
+    max-width: 400px;  
+    height: auto; 
 }
 
 .about-content {
@@ -198,15 +196,15 @@ nav ul li a:hover {
 }
 
 .about-content h2 {
-    font-size: 2rem; /* Responsive heading size */
-    color: #007bff; /* Primary color for headings */
+    font-size: 2rem;  
+    color: #007bff;  
     margin-bottom: 10px; 
 }
 
 .about-content p {
-    font-size: 1rem; /* Body text size */
+    font-size: 1rem;  
     color: #333; 
-    line-height: 1.6; /* Improved readability */
+    line-height: 1.6;  
     margin: 10px 0; 
 }
 
@@ -217,7 +215,7 @@ nav ul li a:hover {
 }
 
 .about-content ul li {
-    background-color: #e0f7fa; /* Light blue background for list items */
+    background-color: #e0f7fa;  
     margin: 5px 0; 
     padding: 10px; 
     border-radius: 4px; 
@@ -225,7 +223,7 @@ nav ul li a:hover {
 }
 
 .about-content ul li:hover {
-    background-color: #b2ebf2; /* Slightly darker on hover */
+    background-color: #b2ebf2;  
 }
 
 .about-content .btn {
@@ -241,31 +239,31 @@ nav ul li a:hover {
 }
 
 .about-content .btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;  
 }
 
 /* Media Queries for Larger Screens */
 @media (min-width: 768px) {
     #about {
-        flex-direction: row; /* Change to row layout on larger screens */
+        flex-direction: row;  
     }
 
     .about-container {
-        flex-direction: row; /* Side-by-side on larger screens */
+        flex-direction: row;  
         justify-content: space-between; 
         align-items: flex-start; 
     }
 
     .about-image {
-        margin-right: 20px; /* Space between image and text */
+        margin-right: 20px;  
     }
 
     .about-image img {
-        width: 60%; /* Adjust image size on larger screens */
+        width: 60%; 
     }
 
     .about-content {
-        width: 50%; /* Text takes half the width */
+        width: 50%;  
     }
 }
 
@@ -336,81 +334,81 @@ p {
 
 
 .swiper-container {
-    width: 100%; /* Full width */
-    height: auto; /* Automatic height */
-    overflow: hidden; /* Prevent overflow */
+    width: 100%; 
+    height: auto;  
+    overflow: hidden; 
 }
 
 .swiper-wrapper {
-    display: flex; /* Flexbox for proper alignment */
+    display: flex;  
 }
 
 .swiper-slide {
-    display: flex; /* Center content */
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 20px; /* Padding around content */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #fff; /* Background color */
-    width: 100%; /* Ensure each slide takes full width */
-    box-sizing: border-box; /* Include padding in width */
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    padding: 20px;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;  
+    background-color: #fff;  
+    width: 100%;  
+    box-sizing: border-box;  
     border-left: 5px solid #007bff; 
 }
 
 .swiper-button-next, .swiper-button-prev {
-    color: #007bff; /* Change to your preferred color */
-    font-size: 24px; /* Size of the arrows */
-    width: 40px; /* Width of the buttons */
-    height: 40px; /* Height of the buttons */
-    background-color: rgba(255, 255, 255, 0.7); /* Background color */
-    border-radius: 50%; /* Make them circular */
-    display: flex; /* Center the icon */
+    color: #007bff;  
+    font-size: 24px;  
+    width: 40px;  
+    height: 40px;  
+    background-color: rgba(255, 255, 255, 0.7);  
+    border-radius: 50%;   
+    display: flex;  
     align-items: center; 
     justify-content: center; 
-    z-index: 10; /* Ensure they are above other content */
-    transition: background-color 0.3s; /* Smooth background transition */
+    z-index: 10;  
+    transition: background-color 0.3s;  
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Change background on hover */
+    background-color: rgba(255, 255, 255, 0.9); 
 }
 
 
 
 #backward-button, #forward-button {
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Padding for the button */
-    margin: 0 10px; /* Space between buttons */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #007bff;  
+    color: white;  
+    border: none;  
+    padding: 10px 20px;  
+    margin: 0 10px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
 }
 
 #backward-button:hover, #forward-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;  
 }
 
 /* Responsive Design */
 @media (min-width: 768px) {
     .experience-base {
-        flex-direction: row; /* Change to row layout on larger screens */
-        flex-wrap: wrap; /* Allow wrapping for better layout */
-        justify-content: space-between; /* Space out boxes */
+        flex-direction: row;  
+        flex-wrap: wrap;  
+        justify-content: space-between;  
     }
 
     .experience-box {
-        flex: 1 1 calc(30% - 20px); /* Three columns with space between */
-        margin: 10px; /* Margin for spacing */
+        flex: 1 1 calc(30% - 20px);  
+        margin: 10px;  
     }
 }
 
 @media (max-width: 767px) {
     .experience-box {
-        flex: 1 1 100%; /* Full width on smaller screens */
+        flex: 1 1 100%;  
     }
 }
 
@@ -526,9 +524,6 @@ p {
     color: #007bff;
     text-decoration: none;
   }
-  
- 
-  /* styles.css */
 
 /* General styles for the skills section */
 #skills {
@@ -540,7 +535,6 @@ p {
     width:auto;
 }
 
-/* Heading styles */
 #skills h1 {
     text-align: center; 
     font-size: 2.5em; 
@@ -548,7 +542,6 @@ p {
     margin-bottom: 20px; 
 }
 
-/* Styles for each skills category */
 .skills-list h3 {
     font-size: 1.5em; 
     color: #007BFF; 
@@ -556,7 +549,6 @@ p {
     margin-bottom: 10px; 
 }
 
-/* List styles */
 .skills-list ul {
     list-style-type: none; 
     padding: 0; 
@@ -570,14 +562,11 @@ p {
     transition: background-color 0.3s; 
 }
 
-/* Hover effect for list items */
 .skills-list li:hover {
     background-color: #88c0d4; 
     color: white; 
 }
  
-
-/* Additional styles for the skills section */
 .skill-category {
     margin-bottom: 15px; 
 }
@@ -613,11 +602,11 @@ p {
 
 .arrow {
     display: inline-block;
-    transition: transform 0.3s ease; /* Smooth transition for the rotation */
+    transition: transform 0.3s ease;  
 }
 
 .arrow.rotate {
-    transform: rotate(180deg); /* Rotate the arrow 180 degrees */
+    transform: rotate(180deg);  
 }
 
 footer {
@@ -715,11 +704,10 @@ footer p {
     background-color: #0069d9; 
 }
 
-/* Media Query for Responsive Design */
 @media (max-width: 768px) {
     .recommendations-box, .contact-box {
-        flex: 1 1 100%; /* Make boxes take full width */
-        margin: 10px 0; /* Adjust margins for vertical stacking */
+        flex: 1 1 100%; 
+        margin: 10px 0;  
     }
     .about-container {
         flex-direction: column;
@@ -741,63 +729,63 @@ footer p {
 }
 
 .swiper-container {
-    width: 100%; /* Full width */
-    height: auto; /* Automatic height */
-    overflow: hidden; /* Prevent overflow */
+    width: 100%;  
+    height: auto;  
+    overflow: hidden;  
 }
 
 .swiper-wrapper {
-    display: flex; /* Flexbox for proper alignment */
+    display: flex;  
 }
 
 .swiper-slide {
-    display: flex; /* Center content */
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    padding: 20px; /* Padding around content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #fff; /* Background color */
-    width: 100%; /* Ensure each slide takes full width */
-    box-sizing: border-box; /* Include padding in width */
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center; 
+    padding: 20px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;  
+    background-color: #fff;  
+    width: 100%;  
+    box-sizing: border-box;  
 }
 
 .swiper-button-next, .swiper-button-prev {
-    color: #007bff; /* Change to your preferred color */
-    font-size: 24px; /* Size of the arrows */
-    width: 40px; /* Width of the buttons */
-    height: 40px; /* Height of the buttons */
-    background-color: rgba(255, 255, 255, 0.7); /* Background color */
-    border-radius: 50%; /* Make them circular */
-    display: flex; /* Center the icon */
+    color: #007bff;  
+    font-size: 24px;  
+    width: 40px;  
+    height: 40px;  
+    background-color: rgba(255, 255, 255, 0.7);  
+    border-radius: 50%; 
+    display: flex;  
     align-items: center; 
     justify-content: center; 
-    z-index: 10; /* Ensure they are above other content */
-    transition: background-color 0.3s; /* Smooth background transition */
+    z-index: 10;  
+    transition: background-color 0.3s;  
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Change background on hover */
+    background-color: rgba(255, 255, 255, 0.9);  
 }
 
 .navigation-buttons {
     display: flex;
-    justify-content: center; /* Center the buttons */
-    margin-top: 20px; /* Space above the buttons */
+    justify-content: center;  
+    margin-top: 20px;  
 }
 
 #backward-button, #forward-button {
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Padding for the button */
-    margin: 0 10px; /* Space between buttons */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #007bff;  
+    color: white;  
+    border: none; 
+    padding: 10px 20px;  
+    margin: 0 10px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
 }
 
 #backward-button:hover, #forward-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;  
 }
