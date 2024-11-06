@@ -42,7 +42,7 @@ const swiper = new Swiper('.swiper-container', {
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 2, // Show two slides at a time on larger screens
+            slidesPerView: 3, // Show three slides at a time on larger screens
             spaceBetween: 30,
         },
     },

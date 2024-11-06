@@ -293,6 +293,7 @@ p {
     padding: 73px 20px; 
     text-align: center; 
     border-top: 5px solid #007bff; 
+    position: relative;
 }
 
 #experience h1 {
