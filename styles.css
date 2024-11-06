@@ -377,11 +377,7 @@ p {
     background-color: rgba(255, 255, 255, 0.9); /* Change background on hover */
 }
 
-.navigation-buttons {
-    display: flex;
-    justify-content: center; /* Center the buttons */
-    margin-top: 20px; /* Space above the buttons */
-}
+
 
 #backward-button, #forward-button {
     background-color: #007bff; /* Button color */

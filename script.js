@@ -51,12 +51,3 @@ const swiper = new Swiper('.swiper-container', {
         },
     },
 });
-
-// Add event listeners to the new buttons
-document.getElementById('forward-button').addEventListener('click', function() {
-    swiper.slideNext(); // Move to the next slide
-});
-
-document.getElementById('backward-button').addEventListener('click', function() {
-    swiper.slidePrev(); // Move to the previous slide
-});
