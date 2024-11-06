@@ -7,6 +7,10 @@ document.querySelectorAll('.skill-heading').forEach(heading => {
             skillList.style.display = ' block'; // Show the list
         }
     });
+    heading.addEventListener('click', function() {
+        const arrow = this.querySelector('.arrow');
+        arrow.classList.toggle('rotate'); // Toggle the rotate class on click
+    });
 });
 
 document.getElementById('hamburger').addEventListener('click', function() {

@@ -615,6 +615,15 @@ p {
     border-radius: 4px; 
 }
 
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transition for the rotation */
+}
+
+.arrow.rotate {
+    transform: rotate(180deg); /* Rotate the arrow 180 degrees */
+}
+
 footer {
     background-color: #333;
     color: #fff;
