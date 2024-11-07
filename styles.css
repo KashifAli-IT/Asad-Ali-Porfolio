@@ -113,8 +113,13 @@ nav ul li a:hover {
 .hero .btn {
     background-image: linear-gradient(#2193b0 , #6dd5ed);
     color: #333;
+<<<<<<< HEAD
     border: none;
     padding: 10px 13px;
+=======
+    border-radius: 5px; 
+    padding: 6.5px 13px;
+>>>>>>> 2949f10a0020932ac72d4174cf71c83be34fb33f
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.2s ease;
