@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -113,13 +121,10 @@ nav ul li a:hover {
 .hero .btn {
     background-image: linear-gradient(#2193b0 , #6dd5ed);
     color: #333;
-<<<<<<< HEAD
     border: none;
     padding: 10px 13px;
-=======
     border-radius: 5px; 
     padding: 6.5px 13px;
->>>>>>> 2949f10a0020932ac72d4174cf71c83be34fb33f
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -240,7 +245,6 @@ p {
 /* Experience Section */
 #experience {
     background-color: #f0f4f8; 
-    padding-block: 73px; 
     text-align: center; 
     position: relative;
 }
@@ -290,6 +294,7 @@ p {
 
 .swiper-wrapper {
     display: flex;  
+    gap: 15px;
 }
 
 .swiper-slide {
@@ -739,6 +744,7 @@ footer p {
 
     .about-image {
         margin-right: 20px;  
+        max-width: 100%;
     }
 
 
@@ -793,38 +799,79 @@ footer p {
         padding: 0;
     }
     .hero {
-        height: 40vh;
+        height: calc(50vh + 100px);
     }
     .swiper-slide {
         margin-right: 0 !important;
     }
     #skills {
-        padding: 0;
+        padding: 50px 12px;
     }
     footer {
         padding: 10px 0;
     }
     .contact-box {
-        padding: 0;
+        padding: 0 12px;
     }
     #contact-form input, #contact-form textarea {
         padding: 10px 0;
     }
     .recommendations-box {
-        padding: 0;
+        padding: 0 12px;
     }
     .skill-heading {
         padding: 10px 0;
     }
     .certification-feature-box,
     .education-feature-box {
-        padding: 0;
+        padding: 0 12px;
     }
     #projects .project-box {
-        padding: 10px 0;
+        padding: 10px 10px;
     }
     .about-content ul li {
-        padding: 10px 0;
+        padding:0 0 10px 0 ;
+    }
+    .about-content h2 {
+        font-size: 18px;
+    }
+    #experience {
+        padding-bottom: 30px;
+    }
+    #experience h1 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .swiper-slide h3 {
+        font-size: 18px;
+    }
+    #projects p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    #projects .project-base {
+        padding-inline:12px;
+    }
+    #education, #certifications {
+        padding: 50px 12px;
+    }
+    #education h1, #certifications h1 {
+        font-size: 24px;
+    }
+    .education-feature-box h3, .certification-feature-box h3 {
+        margin-bottom: 10px;
+    }
+    #skills h1 {
+        font-size: 24px;
+    }
+    .content-wrapper {
+        padding-inline: 12px;
+    }
+    .recommendation p {
+        margin: 0;
+    }
+    .recommendations-box h2, .contact-box h2 {
+        font-size: 24px;
     }
 }
 
@@ -838,9 +885,24 @@ footer p {
     }
     .about-content {
         text-align: left;
+        padding-inline: 12px;
     }
    
     .project-base {
         padding-bottom: 30px;
+    }
+    nav {
+        height: 30px;
+    }
+    .hero h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .about-content p {
+        margin: 0;
+    }
+    .about-content .btn {
+        margin: 0;
     }
 }
